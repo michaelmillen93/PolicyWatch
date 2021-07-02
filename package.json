@@ -1,0 +1,14 @@
+{
+  "name": "policywatch",
+  "version": "1.0.0",
+  "description": "News app",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:dist/css"
+  },
+  "author": "Michael Millen",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  }
+}

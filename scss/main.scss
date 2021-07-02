@@ -1,0 +1,122 @@
+@import "config";
+@import "components";
+@import "media";
+@import "utilities";
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle&display=swap");
+
+//CONTAINER STYLE
+
+.container {
+  min-height: 100vh;
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+//HEADING STYLES
+.heading {
+  font-size: 3rem;
+  padding: 1rem;
+  border-bottom: solid #000 2px;
+}
+
+.subhead {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+//COUNTRY SELECT
+.country {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 3rem;
+
+  label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+}
+
+#flag-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 3rem;
+
+  .flag__img {
+    height: 6rem;
+    width: 10rem;
+  }
+}
+
+//FILTER TAB STYLES
+
+.filter {
+  max-width: 100rem;
+  margin: 2rem auto 0 auto;
+  &__tab-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__tab {
+    margin-right: 1rem;
+    transition: transform 0.2s ease;
+    border-radius: 5px;
+    border: none;
+
+    span {
+      font-weight: 600;
+      display: inline-block;
+      font-size: 2rem;
+      padding: 0.5rem;
+    }
+
+    &--active {
+      transform: translateY(-30%);
+      background-color: $color-primary;
+      color: #fff;
+    }
+  }
+
+  &__input {
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 100%;
+  }
+}
+
+//RESULTS STYLING
+
+.results-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .result {
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    margin: 1.5rem;
+    border-radius: 5px;
+
+    &__image {
+      align-self: center;
+      height: 10rem;
+      width: 10rem;
+      margin: 1rem 1.5rem 1rem 1rem;
+    }
+
+    &__content {
+      font-size: 1.5rem;
+      flex: 1;
+      padding: 1rem;
+    }
+  }
+}

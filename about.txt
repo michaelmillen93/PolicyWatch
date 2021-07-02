@@ -1,0 +1,21 @@
+PolicyWatch user stories:
+
+1. User should be able to search articles by category (sports, politics, business, etc.)
+2. User should recieve an itemized list of articles based on the keyword they search
+3. User should have the ability to sort articles by date
+4. User should have the ability to filter searches to a specific publisher
+5. Sources should be labeled based on reported levels of bias (i.e. right/left bias, or if the source is known for conspiracy theories/misinformation/foreign state affiliated government media etc.) Can do this by scraping data from Media Bias/Fact Check site, storing data and linking to PolicyWatch project
+6. User should have the ability to store articles to read later (use local storage)
+
+
+//Next pomodoro - work on styling input and active tab 
+
+
+data
+
+author
+title
+url
+publishedAt
+source
+urlToImage
